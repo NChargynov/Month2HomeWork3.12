@@ -17,12 +17,12 @@ public class BankAccount {
         return amount;
     }
 
-    public double withDraw(double sum) throws LimitException {
-        System.out.println("Вы сняли на сумму " + sum);
-        amount = amount - sum;
-        if (sum > amount) {
+    public double withDraw(double sum2) throws LimitException {
+        System.out.println("Вы сняли на сумму " + sum2);
+        amount = amount - sum2;
+        if (sum2 > amount) {
             throw new LimitException("Не хватает денежных средств ", getAmount());
         }
-        return sum;
+        return sum2;
     }
 }

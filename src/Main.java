@@ -7,7 +7,7 @@ public class Main {
 
         while (true) {
             try {
-                accountPeter.withDraw (6000);
+                accountPeter.withDraw(6000);
                 System.out.println("На вашем балансе осталось" + accountPeter.getAmount());
             }catch (LimitException le){
                 System.out.println("На вашем балансе " + accountPeter.getAmount());
